@@ -13,8 +13,8 @@ boundiries=[
         ([94, 80, 2], [126, 255, 255]), #blue
         ([25, 52, 72], [102, 255, 255]) #green
         ]
-color = 0
-color2 = ["RED", "BLUE", "GREEN"]
+color = 0 #variable for choosing color
+color2 = ["RED", "BLUE", "GREEN"] #variable for printing text to screen
 while True:
     _, frame = video_capture.read()
     hsv = cv2.cvtColor(frame, cv2.COLOR_BGR2HSV)
